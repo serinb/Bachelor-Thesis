@@ -2,10 +2,7 @@
 %*****************************************
 \chapter{Developing an Interaction System}\label{ch:forth}
 %*****************************************
-\textbf{VERY LAST: }INTRODUCTION TO THE CHAPTER !!\\
-Mentaiong that the interaction mechanism was inteneded to be a Android smartphone application.\\
-
-Before entering into the design process, it is crucial to mention that the following interaction system was created solely to serve as a tool in the user case study, which we will present in Chapter \ref{ch:fifth}. The system is in no means a suggestion for an authentication concept and was not intended to be utilized as such. It's sole utilization and purpose was meant for the scope of this thesis and no further. Therefore certain aspects such as security and effectiveness have consciously not been considered during the design and the development of this system. Nonetheless, during its creation, we tried our best to follow the steps of a \textbf{User-Centered Design} (UCD) approach and included a selection of \textbf{Human Computer Interaction} (HCI) principles, in order to make the system easier to understand and function. It was important to make sure that our design and structure choices, neither distracted our future study participants from the important factors of the study, nor complicated the effort needed to concentrate on them.  
+We developed an interaction system called \underline{\textbf{FiPa}} to further examine findings of Anonymous et al. \cite{anonymous}, discussed in Chapter \ref{ch:third}. Before entering into the development process, it is crucial to mention that the following interaction system was created solely to serve as a tool in the user case study, which we will present in Chapter \ref{ch:fifth}. The system is in no means a suggestion for an authentication concept and was not intended to be utilized as such. It's sole utilization and purpose was meant for the scope of this thesis and no further. Therefore certain aspects such as security and effectiveness have consciously not been considered during the design and the development of this system. Nonetheless, during its creation, we tried our best to follow the steps of a \textbf{User-Centered Design} (UCD) approach and included a selection of \textbf{Human Computer Interaction} (HCI) principles, in order to make the system easier to understand and function. It was important to make sure that our design and structure choices, neither distracted our future study participants from the important factors of the study, nor complicated the effort needed to concentrate on them.  
 
 
 \section{Requirements of the Concept} \label{4.1}
@@ -27,8 +24,8 @@ In contrast to the study by Anonymous et al. \cite{anonymous}, we wanted to dire
 
 \begin{figure}[t!]
 \centering
-\includegraphics[width=14cm, height=6cm]{Chapters/graphics/ConceptIdea.jpeg}
-\caption[This is a short caption for the index]{This is a long caption, which will be placed below the image}
+\includegraphics[width=15cm, height=6cm]{Chapters/graphics/ConceptIdea.jpeg}
+\caption{Simple illustrtation of the idea. The procedure is composed of three steps: \textbf{Memorize} a pattern, \textbf{Find} the pattern, hidden inside a grid, and then \textbf{Input} of the pattern.}
 \label{fig:concept}
 \end{figure}
 
@@ -47,7 +44,7 @@ We derived the idea of using a grid of buttons from the concept \textit{Pattern 
 \begin{figure}[t!]
 \centering
 \includegraphics[width=15cm, height=5cm]{Chapters/graphics/OriInput.PNG}
-\caption[This is a short caption for the index]{This is a long caption, which will be placed below the image}
+\caption{Depiction of how we attempted to construct the mental and practical tasks, depending on whether \textbf{orientation time} and \textbf{input time} were long or short.}
 \label{fig:orientation_input}
 \end{figure}
 
@@ -63,7 +60,7 @@ As for the \textbf{mental task}, we envisioned to design a grid filled with emoj
 \begin{figure}[t!]
 \centering
 \includegraphics[width=14cm, height=11cm]{Chapters/graphics/firstdraft.PNG}
-\caption[This is a short caption for the index]{This is a long caption, which will be placed below the image}
+\caption{More detailed representation our vision for the design and the construction of the mental and practical tasks in our concept.    }
 \label{fig:firstdraft}
 \end{figure}
 
@@ -87,7 +84,7 @@ Next, we proceeded with the pattern and grid design. After a couple of trials, w
 \begin{figure}[t!]
 \centering
 \includegraphics[width=15cm, height=7cm]{Chapters/graphics/prototypeStructure.PNG}
-\caption[This is a short caption for the index]{This is a long caption, which will be placed below the image}
+\caption{Simple representation of the structure of our second prototype. Each part is assigned to a particular ratio. For each ratio there are three grids. Each grid presents a \textbf{mental task} (find) and \textbf{practical task} (input), a so called \textbf{couple}. The order of the ratios presented in this figure is only a suggestion. The exact order of the ratios was not important in the evaluation phase.}
 \label{fig:prototype}
 \end{figure}
 
@@ -95,12 +92,9 @@ Next, we proceeded with the pattern and grid design. After a couple of trials, w
 
 As in our first draft evaluation (Section \ref{4.2.2.2}), we created a \textit{Wizard of Oz} paper prototype \cite{Butz2014} to evaluate the changes and improvements that we made in our concept. However this time, the prototype was created differently. We wanted to test a certain structure to see if it would be suitable for the implementation of our concept. Thus, we have three ratios (Section \ref{4.1}) to examine, the prototype was structured accordingly into three parts. In the previous draft, we only had one \textbf{mental} and \textbf{practical task} per ratio. For simplicity, we will call the composition of \textbf{mental} and \textbf{practical task}, a \textbf{couple}. Instead of having only one couple per ratio, we decided it would be reasonable to assign three to each ratio. That way, they  would have the chance to interact with each of the ratio-designs more than once and thereby remember them better during the qualitative segment of our study. Figure \ref{fig:prototype} represents the rough structure of our paper prototype. We tested our prototype with the same set of participants with whom we had tested our first draft. We did so, in order to receive a more detailed feedback on whether the flaws, detected in our first draft, were correctly fixed. This did not lead to a bias of our evaluation, thus the design of the \textbf{mental} and \textbf{practical tasks} were completely different than in the first draft. Fortunately, both, layout and structure of our prototype were accepted well. \\
 
-We adapted the same measurement method that we used in Section \ref{4.2.2.2}. We considered the first and second couple of each part to be an exercise for the participant to get acquainted with the concept. Therefore, we only considered the average times of the third couple of each ratio. Although not accurate, the time approximate duration resulted as we had imagined and desired for our concept.
+We adapted the same measurement method that we used in Section \ref{4.2.2.2}. We considered the first and second couple of each part to be an exercise for the participant to get acquainted with the concept. Therefore, we only considered the average times of the third couple of each ratio. Although not accurate, the approximate duration resulted as we had imagined and desired for our concept.
 
 \section{Implementation of the Concept} \label{4.3}
 
-- 
 
-LATER IN IMPLEMETNATION ! 
-We also decided to shuffle the buttons inside each grid by hand, in order to have the freedom to build, so called traps that assure that finding the pattern wasn't too easy. In Figure [ADD IMAGE] there are couple example for some of our traps. Another reason for manually designing the grids, was to assure that the pattern was only contained once in the grid. We were not sure if both of our visions would have been possible, if we had used randomization to shuffle the buttons inside grids. \\
 

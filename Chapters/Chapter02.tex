@@ -3,7 +3,7 @@
 \chapter{Theme}\label{ch:second}
 %*****************************************
 
-The purpose of this chapter is to fill the gap of knowledge, by contextualizing the importance smartphone authentication and by illustrating why it is crucial and necessary to improve it. Next, we will introduce the research field of Usable Security by explaining their aim and the steps they are taking in order increase usability in security mechanisms, in general. Last but not least, we will present the recent work and appproaches made in the field of improving usability in smartphone authentication.   
+The purpose of this chapter is to fill the gap of knowledge on smartphone authentication, by contextualizing its importance and by illustrating why its improvement is crucial and necessary. Next, we will introduce the research field of \textbf{Usable Security} by explaining its aim and portray the steps that researchers are taking in order to increase usability in security mechanisms, in general. Last but not least, we will present the recent work and approaches made in the field of improving usability in smartphone authentication.   
 
 \section{Context}
 
@@ -11,7 +11,7 @@ The purpose of this chapter is to fill the gap of knowledge, by contextualizing 
 
 Nowadays, smartphones are approved to be one of the main essentials in people's day to day lives. Besides serving as a medium for basic communication, mobile phones have evolved in a remarkable way, offering advanced features and functions which were formally known to only be possible on a personal computer \cite{Alsaleh}. Besides storing and granting access to personal photos, videos, emails, and social media, smartphones enable their users to do money transfers, online shopping, and even track their own health through the tips of their fingers \cite{Egelman:2014:YRL:2660267.2660273,Albayram:2017:BUL:3235924.3235929,Schloeglhofer}. \\
 
-Being the powerful and capable devices that they are, it is said that smartphones have the potential to replace the need for a personal desktop \cite{Alsaleh}. Hence, they should be capable of protecting their users' sensitive and private data confidentially and securely. The fact that users carry their mobile phones with them wherever they go, causes a threat that the devices might get  lost or even stolen \cite{Egelman:2014:YRL:2660267.2660273}. An American software company, named \textbf{Symantec}\footnote{https://www.symantec.com/de/de - last accessed: 2019/11/04}, conducted an experiment, where they purposely "lost" fifty unprotected smartphones in five destinations. They did so, to observe how the finders of the devices would behave and how the data stored on the devices would be treated. Surprisingly, they found that the data was accessed on 96\% of the smartphones and that only half of the finders offered to return the devices \cite{symantec}. It is safe to assume that a smaller amount of the data would have been compromised, had the phones been protected by a security mechanism. Considering the risk portrayed through the experiment and the threat of hackers gaining unauthorized access to private data, it is noticeable how important authentication mechanisms (\textbf{"screen locks"}) are for users' data security and privacy.\\
+Being the powerful and capable devices that they are, it is said that smartphones have the potential to replace the need for a personal desktop \cite{Alsaleh}. Hence, they should be capable of protecting their users' sensitive and private data confidentially and securely. The fact that users carry their mobile phones with them wherever they go, causes a threat that the devices might get lost or even stolen \cite{Egelman:2014:YRL:2660267.2660273}. An American software company, named \textbf{Symantec}\footnote{https://www.symantec.com/de/de - last accessed: 2019/11/04}, conducted an experiment, where they purposely "lost" fifty unprotected smartphones in five destinations. They did so, to observe how the finders of the devices would behave and how the data stored on the devices would be treated. Surprisingly, they found that the data was accessed on 96\% of the smartphones and that only half of the finders offered to return the devices \cite{symantec}. It is safe to assume that a smaller amount of the data would have been compromised, had the phones been protected by a security mechanism. Considering the risk portrayed through the experiment and the threat of hackers gaining unauthorized access to private data, it is noticeable how important authentication mechanisms (\textbf{"screen locks"}) are for users' data security and privacy.\\
 
 The purpose of an \textbf{authentication mechanisms} is to allow a person access to a certain medium, only after verifying and approving that they truly are who they claim to be. There are many ways in which this could take place. In general the mechanism asks the person, who is requesting access, to enter a secret which only the owner of the medium should know. It serves as a countermeasure to exploitation of personal and confidential information. There are many types of authentication mechanisms and these can be categorised as follows \cite{gorman}:  
 \begin{itemize}
@@ -47,46 +47,38 @@ Despite previous discoveries, usability of authentication mechanisms still remai
 
 Experts in human factors differentiate between two types of tasks: \textbf{productive tasks} and \textbf{supportive tasks} \cite{sasse}. Productive tasks are the activities needed to accomplish a certain goal or to reach a certain outcome \cite{sasse}. They fulfill the purpose of a system's existence \cite{sasse}. Supportive tasks are ones intended to help productive tasks in being executed efficiently and on a permanent basis \cite{sasse}. According to Sasse et al. \cite{sasse}, security mechanisms are considered to be supporting tasks. The grave problem, thereby, is that often times the requirements of current security mechanisms contradict or do not match the demands of the tasks which they support. In turn, the efficiency of the production task is reduced due to the delay of its accomplishment. The reason for this, is that, in general, security mechanisms are not coherent with the demands and needs of productive tasks. Therefore, users are involuntarily put in a position to choose between which task to prioritize. Since the production task generally is their initial goal, they find themselves looking for ways to bypass or neglect security systems. \\
 
-In order to find a solution for this matter, each form of security measure has to be researched separately, so that the mechanisms can be specifically made to adapt the context of the productive tasks that they support. Thus the main focus of this thesis is smartphone authentication, the following we
-presenting certain approaches and suggestions made towards creating efficient and user-friendly authentication mechanisms for smartphones. Thereby the following research questions will be of interest: 
+In order to find a solution for this matter, each form of security mechanism has to be researched separately, so that it can be specifically made to adapt the context of the productive tasks that it supports. Thus the main focus of this thesis is smartphone authentication, we will be presenting certain approaches and suggestions made towards creating efficient and user-friendly authentication mechanisms for smartphones. Thereby the following research questions are of interest: 
 
 
 \begin{itemize}
     \item \textit{What are the factors that affect usability in smartphones authentication?}
-\item \textit{How can we evaluate whether an authentication mechanism is usable, or not?} 
+\item \textit{What is the reason for many users' insecure behaviour and how can we change it?} 
     \item \textit{How can we compare multiple systems based on their usability and evaluate them accordingly?}
 \end{itemize}
 
-
 \section{Related Work}
 
-OUTLINING
-\begin{itemize}
-    \item behaviour and perception
-    \item methods of intervention
-    \item analysis and comparison of current mechanisms
-\end{itemize}
+In the following section, we will discuss a collection of approaches made in the field of \textbf{Usable Security} with the intention of analysing smartphone authentication from users' perspective and thinking of new ways to improve security mechanisms in terms of their efficiency and effectiveness \cite{anonymous}. \\
 
-In the following section we will discuss a collection of approaches made in the field of \textbf{Usable Security} with the intention of analysing smartphone authentication from the users' perspective and thinking of new ways to improve security mechanisms in terms of their efficiency and effectiveness \cite{anonymous}. \\
+In general, when solving the matter of usability in security systems we cannot expect to find a sole solution that will solve all usability issues. Usability is a very complex and broad subject and there is a wide range of factors that have been found to play a role in increasing or decreasing it \cite{anonymous,harbach,Albayram:2017:BUL:3235924.3235929, AnatomySmartphone}. In order to give well-structured insight on the recent findings, we will group them according to their interest and focus. 
 
-In general when solving the matter of usability in security systems we cannot expect to find a sole solution that will solve all usability issues. Thus it is a very complex and broad subject and there is a wide range of factors that have been found to play a role in increasing or decreasing usability in smartphone security[add sources]. Researchers have made the effort of finding the reason for users' insecure behaviour by conducting studies to observe their attitude towards certain authentication mechanisms and smartphone security, in general.[add source] \\
+\subsection{Users' behaviour and perception}
 
-Are the following references enough? 
+Researchers have made the effort of finding the reason for users' insecure behaviour by conducting studies to observe their attitude towards certain smartphone security, in general. For instance, in a research publication by Harbach et al. \cite{harbach} the security behaviour of smartphone users' was investigated. The authors were interested in finding out how users behaved in real life scenarios regarding unlocking their smartphone and how they perceived smartphone security, in general. They were also interested in discovering how much time the act of unlocking takes up from the overall smartphone usage. To do so, they conducted an online study which yielded 260 participants to obtain qualitative data on users perception on smartphone authentication. They also conducted a field study which lasted one month and yielded 57 participants, to examine users authentic behaviour towards smartphone security. In terms of quantitative data, they found that, on average, participants turned their on 83.3 times and authenticated 47.8 times. These numbers imply estimate of 5.2 screen switch-ons and 3 authentications per hour, on average. The 36 participants underpredicted the amount of screen switch-ons and unlocks by an estimated 141 percent. Harbach et al. \cite{harbach} also found that smartphone security was perceived as environment-dependent, meaning it was rated as irrelevant in trusted environments. Furthermore, Harbach et al. \cite{harbach} discovered that during smartphone usage, sensitive data was accessed only ca. 25 percent of the time, on average. This means that about 75 percent of the overall smartphone usage, did not include any data or action in need for security of protection. On that note, Harbach et al. suggested that by only applying security measures to the applications and features of a smartphone that require the access of sensitive data, it would be possible to minimizing the amount of daily smartphone unlocks. In that way, the practice of smartphone security would require less effort and thereby be much easier. Furthermore, Harbach et al. identified that users take different measures other than security mechanisms to protect their phone, such as not leaving their phone unsupervised in public. 
+
+In 2016, Harbach et al. conducted an international study in which over 8000 participants were surveyed on their smartphone security behaviour. The purpose of this research was to examine whether history and culture dictated users' behaviour. In total, participants in eight countries where surveyed: Canada, the US, Australia, Germany, Italy, Japan, Netherlands, and the UK.
+
 
 \begin{itemize}
-    \item refer to : 
-    \item "better ..." by Albayram 2017
-    \item Keep on lockin 2016
-    \item its a hard lock life 2014
-    \item understading how security mechanisms are perceived 2017
-    \item the anatomy of smartphone unlocking 2016
-    \item patterns in the wild 2013
+
     \item are you ready to lock ?
     \item emanuel diss on mapping and design and usability , temporal arrangement 
 \end{itemize}
 
 
+\subsection{Methods of intervention}
 
+\subsection{Analysis and comparison of current mechanisms}
 
 
 
