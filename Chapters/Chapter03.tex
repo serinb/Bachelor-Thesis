@@ -28,7 +28,7 @@ The two phases which are considered to be highly essential are the orientation a
 
 By outlining the structure of the authentication process, Anonymous et al. \cite{anonymous} made a collection of observations and factors which they wanted to regard and prove in a user case study. First, they wanted to consider how authentication phases are proportioned. Reason being that it has a significant influence on the perceived efficiency of a mechanism. Moreover, the longer the orientation time of an authentication mechanism is, the slower and less efficient it is perceived. In fact, cases in which the duration of the orientation phase exceeds the input phase, have been seen to be widely disliked by users. \\
 
-Second, that they wanted to consider how authentication phases are ordered in an authentication process \cite{anonymous}. Thus this factor may highly differ amongst authentication concepts, such as Pattern Rotation and Marbles \cite{Marbles} (Section \ref{2.2.3}, it is very important to regard. For instance, Pattern Rotation only consists of two phases, with the orientation preceding the input phase. Marbles, on the other hand, has multiple small orientation and input phases, ordered in an alternating manner. Interestingly, Anonymous et al. \cite{anonymous} find that the latter has the possibility of decreasing the perceived duration of authentication. \\
+Second, that they wanted to consider how authentication phases are ordered in an authentication process \cite{anonymous}. Thus this factor may highly differ amongst authentication concepts, such as Pattern Rotation and Marbles \cite{Marbles} (Section \ref{2.2.3}), it is very important to regard. For instance, Pattern Rotation only consists of two phases, with the orientation preceding the input phase. Marbles, on the other hand, has multiple small orientation and input phases, ordered in an alternating manner. Interestingly, Anonymous et al. \cite{anonymous} find that the latter has the possibility of decreasing the perceived duration of authentication. \\
 
 Third, they want to regard the coherence of orientation and input phases in terms of their contexts. Thus it also has a significant impact on a mechanism's perceived efficiency \cite{anonymous}. Meaning, the less coherent the contexts of orientation time and input time are, the less efficient and convenient they are perceived. This factor was regarded in the design of Marbles \cite{Marbles}. Thus its use alternates from finding the marbles and entering them, the contexts of the tasks complement each other. Through further research Anonymous et al. \cite{anonymous} have found that humans tend to perceive periods longer than they are if the contexts of these periods are incoherent \cite{anonymous,perception}.\\
 
@@ -36,7 +36,8 @@ Lastly, Anonymous et al. \cite{anonymous} state that error recovery should be ca
 
 \section{User Case Study}
 
-To prove their assumptions and observations, Anonymous et al. \cite{anonymous} decided to focus mainly on the phases, orientation, and input. Thus they are most important during authentication. To do so, they selected three authentication concepts, each representing a different ratio of orientation and input time \cite{anonymous} \footnote{To better understand the functionalities of the concepts listed above, we recommend revisiting the approach by Zezschwitz et al. \cite{Marbles}, presented in Section \ref{2.2.3}.}: 
+To prove their assumptions and observations, Anonymous et al. \cite{anonymous} decided to focus mainly on the phases, orientation, and input. Thus they are most important during authentication. To do so, they selected three authentication concepts, each representing a different ratio of orientation and input time \cite{anonymous}
+\footnote{To better understand the functionalities of the concepts listed above, we recommend revisiting the approach by Zezschwitz et al. \cite{Marbles}, presented in Section \ref{2.2.3}.}: 
 
 \begin{itemize}
     \item \textbf{Android Unlock Pattern} presented a \textcolor{red}{short} orientation - \textcolor{red}{short} input ratio,
@@ -44,6 +45,37 @@ To prove their assumptions and observations, Anonymous et al. \cite{anonymous} d
     \item \textbf{Marbles} presented a ratio in which orientation and input time were interlaced.
 \end{itemize}
 
-It is important to note that Pattern Rotation and Marbles were slightly modified in this study. Pattern Rotation presented a larger grid than the original design, and in Marbles, the elements (marbles) were small images rather than colors only [FIGURE !!!]. All three concepts were implemented in a prototype which was intended to be installed on the Android smartphones of study participants \cite{anonymous}. The prototype was intended to serve as an authentication system on the participants' phones. Each of the concepts was planned to be tested for ten days \cite{anonymous}. After each ten-day period, an online survey was required to be taken. Also, during the concept-tests, orientation and input times were logged for each authentication \cite{anonymous}. Orientation time was logged from the moment the screen was switched on, to the first input event. Input time was logged from the first to the last input event \cite{anonymous}. Participants were allowed to choose their own secrets for the concepts. However, patterns for Android Unlock Pattern had to consist of six nodes, patterns for Pattern Rotation had to have five nodes, and secrets in Marbles had to consist of four elements \cite{anonymous}. \\
+It is important to note that Pattern Rotation and Marbles were slightly modified in this study. Pattern Rotation presented a larger grid than the original design, and in Marbles, the elements (marbles) were small images rather than colors only [FIGURE !!!]. All three concepts were implemented in a prototype which was intended to be installed on the Android smartphones of study participants \cite{anonymous}. The prototype was intended to serve as an authentication system on the participants' phones. Each of the concepts was planned to be tested for ten days \cite{anonymous}. After each ten-day period, an online survey was required to be taken. Also, during the concept-tests, orientation and input times were logged for each authentication \cite{anonymous}. Orientation time was logged from the moment the screen was switched on, to the first input event. Input time was logged from the first to the last input event \cite{anonymous}. Participants were allowed to choose their own secrets for the concepts. However, patterns for Android Unlock Pattern had to consist of six nodes, patterns for Pattern Rotation had to have five nodes, and secrets in Marbles had to consist of four elements \cite{anonymous}.
 
-The study yielded 19 participants and delivered a set of 18 valid data entities \cite{anonymous}. In terms of "measured efficiency", Anonymous et al. found that Pattern Rotation
+\subsection{Results}
+
+The study yielded 19 participants and delivered a set of 18 valid data entities \cite{anonymous}. Anonymous et al. \cite{anonymous} wanted to examine the different outcomes that result when authentication times are analysed differently. First, they analyzed the overall authentication times of the concepts and noted the following ranking in regarding the \textbf{measured performances}\footnote{The concepts are ordered from fastest to slowest (or best to worst) in this and the following rankings of this section.} \cite{anonymous}:
+
+\begin{enumerate}
+    \item \textbf{Android Unlock Pattern},
+    \item \textbf{Pattern Rotation},
+    \item \textbf{Marbles}.
+\end{enumerate} 
+
+However, when they analysed the input times of each other concepts only, they noticed the following difference:
+
+\begin{enumerate}
+    \item \textbf{Pattern Rotation},
+    \item \textbf{Android Unlock Pattern},
+    \item \textbf{Marbles}.
+\end{enumerate}
+
+Last, they analyzed the orientation time of the concepts and realized another significantly different outcome. Android Pattern Unlock required the least amount of mental effort and therefore had the shortest orientation time, on average \cite{anonymous}. Interestingly, there was hardly any difference between Pattern Rotation and Marbles, in terms of their average orientation times \cite{anonymous}. The \textbf{perceived efficiency} of the concepts was rated qualitatively though five-point likert scales \cite{anonymous}. Results showed that Android Unlock Pattern was seen as the fastest of all three concepts. More than half of the participants considered Marbles to be efficient, despite it being measured slower than Pattern Rotation. Moreover, half of the participants perceived Pattern Rotation as efficient \cite{anonymous}. Also, participants ranked the concepts in the following when asked if they contented a fast and easy orientation \cite{anonymous}: 
+
+\begin{enumerate}
+     \item \textbf{Android Unlock Pattern},
+    \item \textbf{Marbles},
+    \item \textbf{Pattern Rotation}.
+\end{enumerate}
+
+Lastly, when asked about the required cognitive effort, all participants approved of Android Pattern Unlock requiring the least amount of mental effort, followed by Pattern Rotation, then Marbles \cite{anonymous}.
+
+\section{Limitations}
+
+\section{Our Approach}
+
