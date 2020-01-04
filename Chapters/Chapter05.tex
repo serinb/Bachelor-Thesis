@@ -3,60 +3,55 @@
 \chapter{Case Study}\label{ch:fifth}
 %*****************************************
 
-In the following chapter, we will present the user case study which we conducted, to validate the findings of Anonymous et al. \cite{anonymous}, presented in Chapter \ref{ch:third}. Our goal was to validate certain design recommendations made by Anonymous et al. (Chapter \ref{ch:forth}) by using their proposed measurement approach. We will, first, commence by presenting the design of our study. We will then proceed by explaining how we recruited our participants and also present their demographic. Next, we will provide a walkthrough of the study's procedure. Last, we will illustrate the quantitative and qualitative results which we assessed through our study. 
-
-
+The following chapter presents a user case study which was intended to complement and validate the findings made by Anonymous et al. \cite{anonymous} (see Chapter \ref{ch:third}). The chapter begins by introducing the design of the user case study. Next, the demographic of the recruited participants is presented, followed by a documentation of the study's procedure. Last, the quantitative and qualitative results of the study are discussed. The goal of the research contribution was to examine the effect of \textit{orientation time} on the perceived efficiency of authentication mechanisms. 
 
 \section{Design} \label{5.1}
 
-The user case study was designed as a field study. It was conducted on campus of the computer science department of Uni Bonn and at the author's home. The tool used for the study was our developed prototype, \underline{\textbf{FiPa}}, presented in Chatper \ref{ch:forth}. Our independent variable was \textit{ratio} and it had three levels:
+The user case study was designed as a field study which was conducted in two destinations: on campus of the computer science department at Rheinische Friedrich-Wilhelms-Universit{\"a}t Bonn (Uni Bonn) and at the author's home residence. The independent variable was \textit{ratio} and it had three levels:
 \begin{enumerate}
-    \item \textcolor{blue}{Long} orientation - \textcolor{red}{Short} input (abbrv. \textit{Long/Short}), 
-    \item \textcolor{red}{Short} orientation - \textcolor{blue}{Long} input (abbrv. \textit{Short/Long}), 
-    \item \textcolor{red}{Short} orientation - \textcolor{red}{Short} input (abbrv. \textit{Short/Short}). 
+    \item \textcolor{blue}{long} orientation/\textcolor{red}{short} input (abbrv. \textit{long/short}), 
+    \item \textcolor{red}{short} orientation/\textcolor{blue}{long} input (abbrv. \textit{short/long}), 
+    \item \textcolor{red}{short} orientation/\textcolor{red}{short} input (abbrv. \textit{short/short}). 
 \end{enumerate}
 
-The order of the ratios was counterbalanced amongst the participants (see figure \ref{fig:permutation}). Data was collected quantitatively by measuring the \textit{orientation} and \textit{input} time for each of the ratios. We also documented when errors were made during both phases. This information was automatically stored in a local database during the interaction (Section \ref{4.3}). Data was also collected qualitatively through a questionnaire, which required study participants to evaluate the aesthetic of our application\footnote{Although this is slightly beyond the scope of our research,we were interested in seeing how far our design might have had a positive/negative effect on participants' performances. We will present these observations in Chapter \ref{ch:sixth}.}, the ratios ( \textit{Long/Short} and \textit{Short/Long} ), and to also choose which of the two ratios they preferred most. The study was intentionally designed to be as short and simple as possible, such that we could receive the needed information without requiring too much effort or concentration from our participants. On average, the duration of our study was 20 minutes per participant. 
+The implemented concept \underline{\textbf{FiPa}}, presented in Chapter \ref{ch:forth}, served as a medium to represent the ratios of interest. The order of the ratios was counterbalanced amongst the participants (see figure \ref{fig:permutation}). Data was collected quantitatively by measuring the \textit{orientation} and \textit{input time} for each of the ratios, as explained in Chapter \ref{ch:forth}. Data was also collected qualitatively through a questionnaire, which required study participants to evaluate the aesthetic of the application\footnote{Although this is slightly beyond the scope of the research, I was interested in seeing whether the design of the application had an impact on participants' performance. These observations will be presented later in Chapter \ref{ch:sixth}.}, the ratios (\textit{long/short} and \textit{short/long}), and to also choose which of the two ratios they preferred most. On average, the duration of the study was 20 minutes per participant. 
 
 \section{Participants} \label{5.2}
 
-We were able to recruit 25 participants for our study. Initially, students were informed about the study through a social platform for computer science students of Uni Bonn. Another part was collected on campus of the university's computer science department, and four participants were acquaintances of the author. There was no premise for participating in the study, meaning anyone was eligible to partake. After extracting the participants who made errors during the \textit{input} time, we remained with 19 valid data entities, of which 13 (62.4\%) were male and 6 (31.6\%) were female. The average age was 21 years, with 17 being the youngest and 31 being the oldest age. The majority of the participants (78.9\%) had an IT-Background and were computer science students. Also, all of the participants, except for one, used a screen lock for their smartphones, of which 42.1\% used \textit{Pin}, 36.8\% used \textit{Pattern}, and 15.8\% used \textit{Password} (see figure \ref{fig:demo}). 
+Twenty-five participants were recruited for the study. Initially, students were informed about the study through a social platform for computer science students at Uni Bonn. Another part was collected on campus of the university's computer science department, and four participants were acquaintances of the author of this thesis. There was no premise for participating in the study, meaning anyone was eligible to partake. Participants who made input-errors (see Section \ref{4.3.2}) were excluded from the evaluation. Nineteen valid data entities remained, of which 13 (62.4\%) were male and 6 (31.6\%) were female. The average age was 21 years, with 17 being the youngest and 31 being the oldest age. The majority of the participants (78.9\%) had an IT-Background and were computer science students. Also, all participants, except for one, used a screen lock for their smartphones: 42.1\% used \textit{Pin}, 36.8\% used \textit{Pattern}, and 15.8\% used \textit{Password} (see figure \ref{fig:demo}). 
 
 \begin{figure}[t!]
 \centering
 \includegraphics[width=14cm, height=4cm]{Chapters/graphics/permutation.PNG}
-\caption{The order in which the three ratios were permuted in the application, throughout the study.}
+\caption{The order in which the three ratios were counterbalanced amongst the participants of the study.}
 \label{fig:permutation}
 \end{figure}
 
 
 \section{Procedure} \label{5.3}
-The study was held for each participant, separately. We began by roughly explaining the purpose of our study:
+The study was held for each participant, separately. First, the experimenter provided a introduction on the study purpose to the participant:
 
 \begin{center}
-\textit{To analyse certain factors in smartphone authentication that might play a role in its perceived efficiency.}    
+\textit{Analysis of certain factors of a smartphone authentication process that might play a role in its perceived efficiency.}    
 \end{center}
 
-We also emphasized that our main focus was the improvement of usability in authentication mechanisms and that the security aspect was outside the scope of our research. Also, we clarified that testing \underline{\textbf{FiPa}} was not intended to evaluate their cognitive skills or intelligence. We wanted our participants to feel as comfortable as possible during the course of our study and that they did not feel nervous or put under pressure during the prototype-testing. This was important to us because we wanted their performance and our collected data to be as close to the results of a real-life scenario as possible. \\
+It was also emphasized that the improvement of usability in authentication mechanisms was of interest and that the security aspect was outside the scope of this research study. Moreover, participants were assured that the testing of \underline{\textbf{FiPa}} was not intended to evaluate their cognitive skills or intelligence. It also was important that they felt comfortable and that they did not feel nervous or put under pressure during the course of the study, as it could impact negatively validity of the obtained results.\\
 
-Next, we described the structure of our application, \underline{\textbf{FiPa}}. We explained that it was an interaction system which emulated an activity, similar to an authentication concept. Furthermore, we mentioned that the application presented a series of small "challenges", for them to solve. With "challenges" we meant the \textbf{mental} and \textbf{practical} tasks, explained in Chapter \ref{ch:forth}. These simple challenges were demonstrated with the help of a simple illustration.\\
+Next, the experimenter described the structure of the application, representing the concept \underline{\textbf{FiPa}}. They explained to the participant that it was meant to emulate an activity, which resembled an authentication concept. They explained the application presented a series of small "challenges", for the participant to solve\footnote{"Challenges"  meant the \textbf{mental} and \textbf{practical tasks}, explained in Chapter \ref{ch:forth}.}. The simple challenges were demonstrated with the help of the paper prototype, shown in figure \ref{fig:paperprototype}.\\
 
 \begin{figure}[t!]
 \centering
 \includegraphics[width=15cm, height=5cm]{Chapters/graphics/Demos.PNG}
-\caption{Demographic data on the \textit{gender} (left), \textit{IT-Background} (middle) ration and on the \textit{personal screen lock choice} (right) of our participants.}
+\caption{Demographic data on the \textit{gender} (left), \textit{IT-Background} (middle) ration and on the \textit{personal screen lock choice} (right) of the participants.}
 \label{fig:demo}
 \end{figure}
 
-After ensuring that our participant had no further questions, it was time for them to test \underline{\textbf{FiPa}}. The application was installed on an Android smartphone provided by us, not of the participant's personal phone. First, they were asked to begin with the training-segment of the prototype, presented in section \ref{4.3}. The purpose of the training-segment was to ensure that our participant understood the concept of \underline{\textbf{FiPa}}, to prevent an influence of our time measurements to occur through a lack of understanding of what to do. The participant could repeat the training-segment as often as they wanted, until they felt ready to start the actual testing our prototype. We guided them through the segment, when help was needed, and took the chance to explain to them certain features and aspects of the application (i.e., the pop-up feature, the form of input, etc.). \\
+After ensuring that the participant had no further questions, the experimenter proceeded by presenting the application to the participant. The application was installed on an Android smartphone provided by research group of Dr. Emanuel von Zezschwitz.\\
+First, the participants were advised to begin with the training-segment of the application, presented in section \ref{4.3.2} (see figure \ref{fig:flow}). The purpose of the training-segment was to ensure that the participant understood the concept of \underline{\textbf{FiPa}} and to reduce the number of errors in the quantitative data set. As mentioned in Section \ref{4.3.2}, the participant was allowed to repeat the training-segment, until they felt ready to start with the actual testing the concept. During the training-segment, the experimenter guided them through the process, when help was needed, and explained certain features, such as the \textit{error-recovery} and the method of input. \\
 
-When the participant felt ready to start the test, we first entered a \textit{user-id}, to be able to pair their measured data with their qualitative data, in the result-evaluation. We did not intervene, while they were working on the test. Once they were done, they were given a questionnaire to fill out (see Appendix \ref{ch:appendix}). In the end, each participant was compensated with 5 Euros.
-
-
+When the participant felt ready to start the test, the experimenter entered a unique \textit{user-id} for the participant. The experimenter did not intervene, as the participant was executing the actual test of the application. Once the participant was done, they were given a questionnaire to fill out (see Appendix \ref{ch:appendix}). At the end of the study, each participant was compensated with 5 Euros.
 
 \section{Results} \label{5.4}
-
-Throughout this section we will define a \textit{ratio} as a \textit{combination}. We used this terminology during our study to simplify the notion of the word \textit{ratio} to our participants, as a \textit{combination} of different phase lengths.
 
 \begin{figure}[t!]
 \centering
@@ -67,7 +62,7 @@ Throughout this section we will define a \textit{ratio} as a \textit{combination
 
 \subsection{Measurements}
 
- As mentioned earlier, \textit{orientation} and \textit{input} times were measured for each of the \textit{combinations}, realized in our prototype. As we know, each \textit{combination} presents three different challenges (couples, see Section \ref{4.2.2.4}). Analogous to our measurement approach in section \ref{4.2.2.4}, we considered the first and second challenge of each combination to be an exercise for the user. Despite the training-segment, participants made a significant amount of mistakes in the first two challenges, and made very little to non in the third. We excluded all of the data entities which included any unsuccessful input activities. This gave us a clean collection of 19 data sets. \\
+ As mentioned earlier, \textit{orientation} and \textit{input times} were measured for each ratio. , each \textit{combination} presents three different challenges (couples, see Section \ref{4.2.2.4}). Analogous to the measurement approach in section \ref{4.2.2.4}, we considered the first and second challenge of each combination to be an exercise for the user. Despite the training-segment, participants made a significant amount of mistakes in the first two challenges, and made very little to non in the third. We excluded all of the data entities which included any unsuccessful input activities. This gave us a clean collection of 19 data sets. \\
 
 We will start by analysing the measured times of each combination (see figure \ref{fig:combination}). Although, we designed the combinations \textit{Short/Long} and \textit{Long/Short} (see Section \ref{5.1}) to be as close to each other as possible, regarding their duration, our results show that they had a temporal difference of 1176 ms, on average. The combination \textit{Long/Short} had the longest duration, followed by \textit{Short/Long} and, lastly, \textit{Short/Short}.
 
