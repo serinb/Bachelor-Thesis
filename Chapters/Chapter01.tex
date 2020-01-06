@@ -2,65 +2,55 @@
 \chapter{Introduction}\label{ch:first}
 %************************************************
 
-\section{Motivation}
+Nowadays, smartphones are approved to be one of the main essentials in people's day to day lives. Besides serving as a medium for essential communication, mobile phones have evolved remarkably, offering advanced features and functions which were formally known to only be possible on a personal computer \cite{Alsaleh}. Besides storing and granting access to private photos, videos, emails, and social media, smartphones enable their users to do money transfers, online shopping and even track their health through the tips of their fingers \cite{Egelman:2014:YRL:2660267.2660273,Albayram:2017:BUL:3235924.3235929,Schloeglhofer}. \\
 
-\section{Outline}
+Being the powerful and capable devices that they are, it is said that smartphones have the potential to replace the need for a personal desktop \cite{Alsaleh}. Hence, they should be capable of protecting their users' sensitive and private data confidentially and securely. The fact that users carry their mobile phone with them wherever they go causes a threat of their device getting lost or even stolen \cite{Egelman:2014:YRL:2660267.2660273}. An American software company, named \textbf{Symantec}\footnote{https://www.symantec.com/de/de - last accessed: 2019/11/04}, conducted an experiment, where they purposely "lost" fifty unprotected smartphones in five destinations. The company did so, to observe how the finders of the devices would behave and how they would treat the data stored on these devices. Surprisingly, they found that the data was accessed on 96\% of the smartphones and that only half of the finders offered to return the devices \cite{symantec}.  This experiment portrays a security risk that is likely to affect any smartphone user.  It is safe to assume that a smaller amount of the data would have been compromised, had the phones been protected by a security mechanism. Therefore, it is evident that securing smartphones with an authentication mechanism is vital for users' data security and privacy.
 
+\section{The purpose of authentication mechanisms}
 
+The purpose of an \textit{authentication mechanism} is to allow a person access to a particular medium, only after verifying and approving that they indeed are who they claim to be. There are many ways in which this action could take place. In general, an authentication mechanism asks the person, who is requesting access, to enter a secret which only the owner of the medium should know. It serves as a countermeasure to the exploitation of the owner's personal and confidential information. There are many types of authentication mechanisms, and these can be categorised as follows \cite{gorman}: 
 \begin{itemize}
-    \item in this day and age data security and data privacy has become a major and important. 
-    \item Up until the internet was invented and computers and mobile devices are not only used by employees of major companies or organization, who are trusted with their secret information and databases, data security has gotten a new definition. 
-    \item While, back in the day, it was common to have your private Information safe and sound at home, meaning your photos, letters, bills, etc. , people wouldn't worry much about strangers physical access to their private belongings, unless that stranger would brake into their house. 
-    \item yet nowadays, private information is stored in so called clouds on the internet, to which one is only granted access, if one correctly enters a certain secret. 
-    \item With the usage of smart phones and the fact that almost every person owns one, the potential of being a victim of a cyber attack is even higher
-    \item Since Smart Phones are so widely developed that they can be used to work on tasks that one would normally do on a computer 
-    \item They do not only contain private belongings, such as photos and message conversation, but also enable access to bank transaction and SOMETHING ELSE ! 
-    \item On that note, cyber theft has become a serious issue for every Smart Phone User.
-    \item The Most commonly used knowledge-based Smart Phone authentication are PIN, Password and Pattern, which are used for Android Phones, although one might say, that they are easy to use, many users choose to omit setting an authentication mechanisms for their phone, because it's time consuming [set quote here]
-    \item Furthermore they are sensitive to certain security attacks such as shoulder surfing or smudge attacks 
-    \item also users that have a password lock on their smartphone tend to either use simple secrets, which do not suffice the required password guidelines or they reuse one of their already existing passwords. This, of course leads to an even bigger hazard, given the attacker possesses the needed resources to gain access to the other accounts that the password was used for.
-    \item Although biometric authentication such as fingerprint or facial recognition, has become quite popular, the user has to set one of the earlier mentioned methods as a fallback method.
-    \item Since the recent mechanisms are vulnerable to attacks, researchers have tried to design and develop new authentication mechanisms that more secure and resilient against the mentioned attacks, such as [Mentin some Concepts]
-    \item Each newly developed concept or idea for an authentication mechanisms undergoes a process of examination in form of a user case study, investigate whether or not the new design delivers what it's developers promise it does.
-    \item In this user case study, three main aspects of the app are usually measured and analysed, which are efficiency and security, usability.
-    \item While measuring security and efficiency has a pretty straight-forward process, usability is usually qualitively measured, either through a questionnaine in an interview
-    \item However there is no generally used standard for measuring usability. This arises a couple of questions, such as,
-    \item how do we know if a certain developed concept truly is usable 
-    \item What are certain aspects that make some authentication mechanisms more usable than others? 
-    \item How can we compare mechanims with each other, in order to find out which one is more usable than the other? 
-    \item in the paper (...) researchers "present a time measurement approach", which is intended to help develop more usable authentication mechanisms for smartphones in the future
-    \item the time measurement is based on many different aspects of mechanism which were found to have an influence on the usability of the concept
-    \item continue when You have written about the paper in RELATED WORK !! 
-    
-    
-    
-    
-    
-    
-    
-    IMPORTANT !!!!
-    
-    - it is common that in order to measure efficiency, the input speed of the authentication is measured
-    - this always leads to the fact that measured efficiency is often times different than perceived efficiency
-    - but although an input time is short, why might users perceive it as long? 
-    - because the long orientation 
-    - usability is a priority, but the main focus here is efficiency
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    \item Overview of the Thesis
+    \item \textbf{biometric} - describe "what You are" e.g., fingerprint scanner and facial recognition.
+    \item \textbf{knowledge-based} - describe "what You know" e.g., pattern, password, pin.
+    \item \textbf{token-based} - describe "what You have" e.g., cryptographic key or chip.
 \end{itemize}
+
+When speaking of authentication in smartphones, there are a couple of well-known mechanisms that come to mind. These can also be categorized as follows \cite{ediss20251,gorman} : 
+\begin{itemize}
+    \item \textbf{alphanumeric} e.g., password and pin
+    \item \textbf{gesture-based} e.g., Android Unlock Pattern
+    \item \textbf{ID-based} e.g., fingerprint scanner and facial recognition 
+\end{itemize}
+
+To this day, researchers have worked on improving smartphone authentication by developing new concepts and designs for them. One might wonder why this is necessary when there is a decent collection of methods already available. Are the current mechanisms not sufficient or secure enough? \\
+
+The answer to this question is twofold:\\
+
+On the one hand, specific authentication mechanisms lack in security and are vulnerable towards certain attacks \cite{Schloeglhofer}. For instance, Android Unlock Pattern is known to be vulnerable towards so-called \textbf{smudge attacks}. These are attacks that occur when the victim draws their secret pattern, leaving an oily trace of their finger on the touch screen. These smudge marks help the attacker to guess the secret pattern, bypass the security measure, and gain access to the device \cite{ediss20251}. Another popular attack, which occurs primarily "in the wild" are \textbf{shoulder surfing attacks}. These happen when the victim attempts to authenticate themself in public and uncontrolled surroundings. If the attacker is situated in a near distance, behind or beside the victim, they can observe the input of the secret and memorize it for later use \cite{ediss20251}. Authentication mechanisms (e.g. pin, password, and Android Unlock Pattern) are prone to such threats, especially when the alphanumeric or graphical secret is short and simple enough to memorize easily. There have been many research contributions that proposed improvements of existing mechanisms as well as the development of new ones to counteract these security threats. Zezschwitz et al. \cite{vonZezschwitz:2015:SFS:2702123.2702212} developed an authentication concept called \textbf{SwiPIN}, intended to protect pin authentication from shoulder surfing attacks. Another proposal, \textbf{TinyLock}, made by Kwon et al. \cite{kwon}, acts against both smudge and shoulder surfing attacks\footnote{There are many solutions to these attacks other than TinyLock and SwiPIN. In Section \ref{2.2.3}, we will only present SwiPIN as an example for all, to not exceed the scope of our thesis.}.\\
+
+On the other hand, certain authentication mechanisms still lack in user-friendliness and are therefore not as usable as their developers intend for them to be \cite{Schloeglhofer}. As a result, research has shown that many users consciously choose not to use an authentication mechanism on their smartphone \cite{ediss20251, Albayram:2017:BUL:3235924.3235929, Egelman:2014:YRL:2660267.2660273}. Studies have indicated that one of the main reasons for such behavior is because users perceive screen locks as an inconvenience \cite{Albayram:2017:BUL:3235924.3235929, ediss20251, harbach}. Another reason was found to be a lack of knowledge about smartphone security \cite{Albayram:2017:BUL:3235924.3235929, Adams:1999:UE:322796.322806}. Researchers discovered that some users decide not to install a screen lock, because they underestimate the risk that comes with not having one and because they do not comprehend to which extent their data is at stake \cite{Egelman:2014:YRL:2660267.2660273}. Through these findings, investigations were made on how to create authentication mechanisms that are not only secure, but also usable.
+
+\section{Thesis Aim and Outline}
+
+In previous studies, researchers evaluated an authentication concept's usability by solely measuring its \textit{input time}, meaning the time needed to enter a particular secret (e.g. password, pin, pattern) \cite{anonymous}.
+However, recent research has shown that there are more factors, other than \textit{input time}, that affect the usability of an authentication concept. The most effective factor has been found to be \textit{orientation time} which is the time that a user spends thinking about the input prior to entering it \cite{anonymous}. Anonymous et al. \cite{anonymous} made an effort to examine the effect of \textit{orientation} and many other factors more closely by redefining the structure of a general authentication process and by dividing it into multiple phases, including the \textit{orientation} and \textit{input phase}. Through a user case study, they tested the validity of their approach by analyzing three authentication concepts, each representing a different representation (ratio) of the \textit{orientation} and \textit{input phases}. They discovered that the efficiency, more specifically, the perceived efficiency of an authentication concept is crucial for determining how usable it is. \\
+
+The aim of this thesis was to complement the findings made by Anonymous et al. by testing their approach, using a different technique. Instead of testing the different variations of \textit{orientation} and \textit{input time}, by using different concepts, only one concept was used which was specifically developed for the purpose of this thesis. Next, a complementary user case study was conducted with the purpose of proving that orientation time truly produces the effects, discovered by Anonymous et al. \cite{anonymous}. The thesis will be organized as follows: \\
+
+Chapter \ref{ch:second} will contextualize the improvement of smartphone authentication in the research field of \textit{Usable Security}, by first discussing their aim and ambitions and then presenting a set of selected related work, which have contributed towards solving the problem of usability in smartphone authentication by making different approaches. Lastly, the main approach of this thesis will be extracted from these findings, by discussing there true potential and effect. \\
+
+Chapter \ref{ch:third} will illustrate the theoretical groundwork of this thesis, which is the approach and the findings made by Anonymous et al. \cite{anonymous}. In the end of the chapter, the limitations of their work will be pointed out and balanced by the improvement proposition which were considered the contribution to this thesis.\\
+
+Chapter \ref{ch:forth} will introduce the concept \underline{\textbf{FiPa}}, which was intentionally designed and developed to serve as a tool in the user case study, presented in Chapter \ref{ch:fifth}. The development process involved the consideration of a series of HCI principles and it was constructed to follow the nature of a user-centered design approach. \\
+
+Chapter \ref{ch:fifth} will present the user case study, which was conducted to validate the findings, presented in Chapter \ref{ch:third}.
+It thoroughly illustrates the design, procedure and results of the study.\\
+
+Chapter \ref{ch:sixth} will discuss the results of the study, presented in Chapter \ref{ch:fifth} and analyze whether the complementary contribution of this thesis truly evaluated the findings of Anonymous et al. \cite{anonymous} Moreover, the chapter will elaborate on the limitation which were faced along the way. \\
+ 
+Lastly, Chapter \ref{ch:seventh} will provides a conclusion regarding the findings from the study in Chapter \ref{ch:fifth} and presents a set of possible future work propositions, which may help in achieving further progress in enhancing the usability of smartphone authentication.
+
+
 
 
 

@@ -93,11 +93,33 @@ The perceived efficiency of the concepts was rated qualitatively through five-po
 
 Lastly, when asked about the required cognitive effort, all participants approved that Android Pattern Unlock required the least amount of mental effort, followed by Pattern Rotation, then Marbles \cite{anonymous}. \\
 
-\textcolor{red}{STILL HAVE TO ANALYZE THE RESULTS}
+\subsection{Design Recommendations}
+
+Based on the results of their study, Anonymous et al. \cite{anonymous} made a list of design recommendations to consider in the creation of authentication concepts. They are intended to optimize the usability of an authentication concept by regulating the following aspects \cite{anonymous}:
+
+\begin{itemize}
+    \item \textbf{Recommendation 1:} \textit{"Measure all Stages"}\\
+    By including orientation time into time measurements, the possibility of making false conclusions about a concept's usefulness could be prevented.
+    \item \textbf{Recommendation 2:} \textit{"Keep Orientation Time Low"}\\
+    As Orientation times are disliked by users, it is suggested to keep as short as possible, because the effect of long orientation times cannot counteracted by short input times.
+    \item \textbf{Recommendation 3:} \textit{"Optimize the Ratio between Orientation Time and [Input Time]"} \\
+    Orientation phases should not be longer than the corresponding input phases, because they not well accepted by users, regardless how fast or efficient a concept's performance is.
+    \item \textbf{Recommendation 4:} \textit{"Avoid/Minimize Randomization"}\\ 
+    Although randomization is often used as a countermeasure towards attacks (e.g., shoulder surfing), it impacts the perceived efficiency of a concepts negatively and should, therefore, be avoided. Especially in between the tasks of an authentication proecdure.
+    \item \textbf{Recommendation 5:} \textit{"Measure Perceived Speed"}\\
+    It is recommended that the performance of an authentication concept is not only assessed quantitatively, yet also qualitatively, in order to obtain information how users' perceive certain aspects of the concept (e.g. orientation time).  
+    \item \textbf{Recommendation 6:} \textit{"Optimize Context Switches"}\\
+    The tasks in an authentication concept should be coherent in terms of their contexts, otherwise they are perceived as usable. 
+    \item \textbf{Recommendation 7:} \textit{"Provide Efficient and Non-interrupting Error Recovery"}\\
+    Error Recovery should be designed to be as "fast" and simple as possible. A given example for good error recovery is Android Unlock Pattern, as its method is non-disturbing thus errors are indicated through colors.  
+    
+    
+\end{itemize}
+
 
 \section{Limitations and suggestive improvements} \label{3.3}
 
-This section will first begin by presenting some of the limitations of the study, given by Anonymous et al. \cite{anonymous}. Next, observations on specific qualities of the study will be presented. These qualities are attempted to be modified and improved in the course of this thesis to make their findings and observations of Anonymous et al. \cite{anonymous} universally valid.  
+This section will first begin by presenting some of the limitations of the study, given by Anonymous et al. \cite{anonymous}. Next, observations on specific qualities of the study will be presented and suggestive improvements on these qualities will be discussed. 
 
 According to Anonymous et al. \cite{anonymous}, the overall perception of the tested concepts could have been influenced by the participants' general preference \cite{anonymous} because a person's culture and history have shown to influence their acceptance of a particular system \cite{Harbach:2016} (Section \ref{2.2.1}). The complementary study, presented in Chapter \ref{ch:fifth} is intended to exclude this limitation by developing a prototype in which particular ratios are represented through the same concept. That way, a more genuine evaluation of the ratios would be possible, without any interference of participants' preferences regarding a particular concept. Moreover, Anonymous et al. \cite{anonymous} stated that the measured times for \textit{orientation} might have differed from the actual times \cite{anonymous}. Reason being that the measurements for the \textit{orientation} times began as soon as the smartphone screen was turned on. However, not every screen activation was always immediately followed by an authentication \cite{anonymous}. A possible solution for rectifying this inaccuracy, is to isolate the \textit{orientation} phase from any other possible action. The concept for the complementary study will be designed in a way that requires the user to actively initiate the authentication process. That way, a fix and accurate starting point for the \textit{orientation} time can be defined.\\
 
